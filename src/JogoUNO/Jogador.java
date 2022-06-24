@@ -1,4 +1,4 @@
-package Classes;
+package JogoUNO;
 
 public class Jogador {
     
