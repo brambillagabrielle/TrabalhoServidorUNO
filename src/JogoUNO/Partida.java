@@ -1,15 +1,12 @@
-package JogoUNO;
+package classes;
 
-import java.util.ArrayList;
+import java.util.Queue;
 
 public class Partida {
     
     int id;
-    ArrayList<Jogador> jogadores;
-    ArrayList<Rodada> rodadas;
-
-    public Partida() {
-    }
+    boolean ativa;
+    Jogador ganhador;
 
     public int getId() {
         return id;
@@ -19,22 +16,20 @@ public class Partida {
         this.id = id;
     }
     
-    public ArrayList<Jogador> getJogadores() {
-        return jogadores;
+    public boolean isAtiva() {
+        return ativa;
     }
 
-    public void setJogadores(ArrayList<Jogador> jogadores) {
-        this.jogadores = jogadores;
+    public void setAtiva(boolean ativa) {
+        this.ativa = ativa;
     }
 
-    public ArrayList<Rodada> getRodadas() {
-        return rodadas;
+    public Jogador getGanhador() {
+        return ganhador;
     }
 
-    public void setRodadas(ArrayList<Rodada> rodadas) {
-        this.rodadas = rodadas;
+    public void setGanhador(Jogador ganhador) {
+        this.ganhador = ganhador;
     }
-    
-    
     
 }
