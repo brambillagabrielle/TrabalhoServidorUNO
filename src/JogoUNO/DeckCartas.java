@@ -1,15 +1,12 @@
-package JogoUNO;
+package classes;
 
-import java.util.ArrayList;
+import java.util.Set;
+import java.util.HashSet;
 
 public class DeckCartas {
     
     int id;
-    ArrayList<Carta> deckCartas;
-
-    public DeckCartas() {
-        
-    }
+    Set<Carta> deckCartas = new HashSet<Carta>();
 
     public int getId() {
         return id;
@@ -19,12 +16,12 @@ public class DeckCartas {
         this.id = id;
     }
 
-    public ArrayList<Carta> getDeckCartas() {
+    public Set<Carta> getDeckCartas() {
         return deckCartas;
     }
 
-    public void setDeckCartas(ArrayList<Carta> deckCartas) {
+    public void setDeckCartas(Set<Carta> deckCartas) {
         this.deckCartas = deckCartas;
-    }    
+    }
     
 }
