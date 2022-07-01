@@ -1,14 +1,11 @@
-package JogoUNO;
+package classes;
 
 public class Carta {
     
     int id;
     char tipo;
-    char cor;
+    String cor;
     int numero;
-
-    public Carta() {
-    }
 
     public int getId() {
         return id;
@@ -26,11 +23,11 @@ public class Carta {
         this.tipo = tipo;
     }
 
-    public char getCor() {
+    public String getCor() {
         return cor;
     }
 
-    public void setCor(char cor) {
+    public void setCor(String cor) {
         this.cor = cor;
     }
 
